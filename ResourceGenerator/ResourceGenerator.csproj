@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+	  <TargetFrameworks>net471;net45;netcoreapp2.0;netstandard2.0</TargetFrameworks>
+	  <NoWarn>1701;1702;1705</NoWarn>
+	  <OutputType>Exe</OutputType>
+	  <StartupObject>ResourceGenerator.Program</StartupObject>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
+	  <OutputPath>bin\Debug\</OutputPath>
+	  <DefineConstants>TRACE;DEBUG</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+	  <OutputPath>bin\Release\</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="LICENSE" />
+	  <None Remove="Output.png" />
+	  <None Remove="README.md" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HearthDb" Version="10.0.1" />
+    <PackageReference Include="ORM-Monitor" Version="2.3.3" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta3" />
+  </ItemGroup>
+
+</Project>
