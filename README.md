@@ -6,17 +6,19 @@
 
 ## Task-based Asynchronous Pattern ([TAP])
 
-* CREATED BY: &nbsp;&nbsp;&nbsp;&nbsp;[Latency McLaughlin]
-* UPDATED: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2/1/2018
-* FRAMEWORK: &nbsp;&nbsp;[.NET] v4.5 - v4.7.1, Standard 2.0, & Core v[[2.0]](https://www.microsoft.com/net/download/windows)
-* LANGUAGE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[C#] (v7.0)
-* OUTPUT TYPE: &nbsp;&nbsp;[Console Application]
-* SUPPORTS: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Visual Studio] 2017, 2015, 2013, 2012, 2010, 2008
-* TAGS: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[.NET], [NuGet], [MyGet], [API], [C#], [NUnit], [Visual Studio]
-* STATUS: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![hearthstone MyGet Build Status](https://www.myget.org/BuildSource/Badge/hearthstone?identifier=1f42bc57-a3a3-47ed-8ea2-ad8287333101)](https://www.myget.org/)
-* LICENSE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![License](https://img.shields.io/badge/HearthStone-License-yellowgreen.svg?style=plastic)](https://github.com/Latency/HearthStone-ResourceGenerator/blob/master/LICENSE)
-* CHAT: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Chat](https://img.shields.io/badge/gitter-join%20chat-lightgrey.svg?style=plastic)](https://gitter.im/HearthSim/Hearthstone-Deck-Tracker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-* VERSION: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Download](https://img.shields.io/myget/hearthstone/v/HearthStone.ResourceGenerator.svg?style=plastic)](https://www.myget.org/F/hearthstone/api/v2/package/HearthStone.ResourceGenerator/2.0.0)
+|              |                      |
+|--------------|----------------------|
+| CREATED BY:  | [Latency McLaughlin] |
+| UPDATED:     | 2/1/2018 |
+| FRAMEWORK:   | [.NET]Framework 4.5 - 4.7.1, [.NET]Standard2.0, [.NET]CoreApp2.0 ([Latest](https://www.microsoft.com/net/download/windows)) |
+| LANGUAGE:    | [C#] (v7.0) |
+| OUTPUT TYPE: | [Console Application] |
+| SUPPORTS:    | [Visual Studio] 2017, 2015, 2013, 2012, 2010, 2008 |
+| TAGS:        | [.NET], [NuGet], [MyGet], [API], [C#], [NUnit], [Visual Studio] |
+| STATUS:      | [![hearthstone MyGet Build Status](https://www.myget.org/BuildSource/Badge/hearthstone?identifier=1f42bc57-a3a3-47ed-8ea2-ad8287333101)](https://www.myget.org/) |
+| LICENSE:     | [![License](https://img.shields.io/badge/HearthStone-License-yellowgreen.svg?style=plastic)](https://github.com/Latency/HearthStone-ResourceGenerator/blob/master/LICENSE) |
+| CHAT:        | [![Chat](https://img.shields.io/badge/gitter-join%20chat-lightgrey.svg?style=plastic)](https://gitter.im/HearthSim/Hearthstone-Deck-Tracker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) |
+| VERSION:     | [![Download](https://img.shields.io/myget/hearthstone/v/HearthStone.ResourceGenerator.svg?style=plastic)](https://www.myget.org/F/hearthstone/api/v2/package/HearthStone.ResourceGenerator/2.0.0) |
 
 ### Screenshot
 
@@ -30,9 +32,6 @@
 * <a href="#introduction">Introduction</a>
 * <a href="#overview">Overview</a>
 * <a href="#installation">Installation</a>
-* <a href="#other">Other Features</a>
-* <a href="#references">References</a>
-* <a href="#license">License</a>
 
 <hr>
 
@@ -78,24 +77,12 @@ ResourceGenerator.exe <path> <folder> <IsOverwriten> [msbuild]
 ResourceGenerator.exe "$(SolutionDir)Resources" Tiles 0
 ```
 
-path &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Target directory to generate the resource in.<br>
-folder &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= Folder name that is created underneat the root directory <Path>.<br>
-IsOverwriten = Boolean value [0 or 1] which forces or bypasses downloading external images via async web request calls.<br>
-msbuild &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= String value (optional) ["msbuild"] which is used for bootstrap post-build rules only.  **DO NOT USE**<br>
-
-<h2><a name="other">Other Features</a></h2>
-
-- Unit Tests:<br>
-  The unit test uses [NUnit] to help qualify the underlying [API].   Included is a sample that can be ran and tested againsted a variety of mock senario conditions.
-
-<h2><a name="references">References</a></h2>
-
- [.NET], [NuGet], [API], [C#], [NUnit], [Visual Studio]
-
-<h2><a name="license">License</a></h2>
-
-[MIT License]
-
+| #  |         Argument             |                                       Description                                                        |
+|----|------------------------------|----------------------------------------------------------------------------------------------------------|
+| 1. | Path                         | Target directory to generate the resource in.                                                            |
+| 2. | Folder                       | Folder name that is created underneat the root directory <Path>.                                         |
+| 3. | IsOverwriten                 | Boolean value [0 or 1] which forces or bypasses downloading external images via async web request calls. |
+| 4. | (optional)<br>**DO_NOT_USE** | String value ["msbuild"] which is used for bootstrap post-build rules only.                              |
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job.)
 
