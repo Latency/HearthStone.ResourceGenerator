@@ -75,12 +75,12 @@ ResourceGenerator.exe <path> <folder> <IsOverwriten> [msbuild]
 ResourceGenerator.exe "$(SolutionDir)Resources" Tiles 0
 ```
 
-| #  |         Argument             |                                       Description                                                        |
-|----|------------------------------|----------------------------------------------------------------------------------------------------------|
-| 1. | Path                         | Target directory to generate the resource in.                                                            |
-| 2. | Folder                       | Folder name that is created underneat the root directory <Path>.                                         |
-| 3. | IsOverwriten                 | Boolean value [0 or 1] which forces or bypasses downloading external images via async web request calls. |
-| 4. | (optional)<br>**DO_NOT_USE** | String value ["msbuild"] which is used for bootstrap post-build rules only.                              |
+| #  |         Argument             |   Type  |                                       Description                                                        |
+|----|------------------------------|---------|----------------------------------------------------------------------------------------------------------|
+| 1. | Path                         | String  | Target directory to generate the resource in.                                                            |
+| 2. | Folder                       | String  | Folder name that is created underneat the root directory <Path>.                                         |
+| 3. | IsOverwriten                 | Boolean | Forces downloading external images via async web request calls.                                          |
+| 4. | (optional)<br>**DO_NOT_USE** | String  | ["msbuild"] which is used for bootstrap post-build rules only.                                           |
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job.)
 

@@ -10,13 +10,13 @@
 #region
 
 using System.Collections.Generic;
-using HearthDb;
-using HearthDb.Enums;
+using HearthStone.Database;
+using HearthStone.Database.Enums;
 
 #endregion
 
 
-namespace ResourceGenerator
+namespace HearthStone.ResourceGenerator
 {
     internal static partial class Program
     {

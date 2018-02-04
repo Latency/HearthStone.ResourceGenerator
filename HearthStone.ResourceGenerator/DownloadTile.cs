@@ -13,8 +13,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
-using HearthDb;
-using HearthDb.Enums;
+using HearthStone.Database;
+using HearthStone.Database.Enums;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Formats.Png;
 using SixLabors.ImageSharp.Processing;
@@ -23,7 +23,7 @@ using SixLabors.Primitives;
 #endregion
 
 
-namespace ResourceGenerator
+namespace HearthStone.ResourceGenerator
 {
     internal static partial class Program
     {

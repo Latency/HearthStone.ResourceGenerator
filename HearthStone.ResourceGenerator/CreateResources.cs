@@ -16,12 +16,12 @@ using System.IO;
 using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
-using HearthDb.Enums;
+using HearthStone.Database.Enums;
 
 #endregion
 
 
-namespace ResourceGenerator
+namespace HearthStone.ResourceGenerator
 {
     internal static partial class Program
     {

@@ -15,14 +15,14 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using HearthDb;
-using HearthDb.Enums;
+using HearthStone.Database;
+using HearthStone.Database.Enums;
 using SixLabors.ImageSharp;
 
 #endregion
 
 
-namespace ResourceGenerator
+namespace HearthStone.ResourceGenerator
 {
     internal static partial class Program
     {

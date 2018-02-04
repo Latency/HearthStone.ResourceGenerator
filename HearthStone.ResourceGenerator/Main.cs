@@ -21,7 +21,7 @@ using ORM_Monitor.Events;
 #endregion
 
 
-namespace ResourceGenerator
+namespace HearthStone.ResourceGenerator
 {
     internal static partial class Program
     {

@@ -13,12 +13,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Resources;
-using HearthDb;
+using HearthStone.Database;
 
 #endregion
 
 
-namespace ResourceGenerator
+namespace HearthStone.ResourceGenerator
 {
     internal sealed class CardCollection : List<Card>, IDisposable
     {
