@@ -26,7 +26,7 @@
 	</PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="HearthStone.Database" Version="10.0.1" />
+    <PackageReference Include="HearthStone.Database" Version="1.0.1" />
     <PackageReference Include="ORM-Monitor" Version="2.3.3" />
     <PackageReference Include="SixLabors.ImageSharp" Version="1.0.1-rc" />
   </ItemGroup>
