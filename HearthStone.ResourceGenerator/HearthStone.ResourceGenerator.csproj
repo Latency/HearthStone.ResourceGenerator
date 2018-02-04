@@ -3,17 +3,17 @@
 	<PropertyGroup>
 	  <TargetFrameworks>net471;net45;netcoreapp2.0;netstandard2.0</TargetFrameworks>
 	  <NoWarn>1701;1702;1705</NoWarn>
-	  <OutputType>Exe</OutputType>
-	  <StartupObject>ResourceGenerator.Program</StartupObject>
+	  <OutputType>Library</OutputType>
+	  <StartupObject></StartupObject>
 	  <RootNamespace>HearthStone.ResourceGenerator</RootNamespace>
 	  <AssemblyName>HearthStone.ResourceGenerator</AssemblyName>
-	  <Version>2.0.0</Version>
+	  <Version>2.0.0-rc</Version>
 	  <Description>HearthStone Artifact Resource Generator</Description>
 	  <PackageTags>HearthStone Artifact ResourceGenerator Resource Generator</PackageTags>
 	  <PackageReleaseNotes>Revamped to v2.</PackageReleaseNotes>
 	  <RepositoryType>GIT</RepositoryType>
-	  <RepositoryUrl>https://github.com/Latency/HearthStone-ResourceGenerator</RepositoryUrl>
-	  <PackageProjectUrl>https://github.com/Latency/HearthStone-ResourceGenerator</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/Latency/HearthStone.ResourceGenerator</RepositoryUrl>
+	  <PackageProjectUrl>https://github.com/Latency/HearthStone.ResourceGenerator</PackageProjectUrl>
 	  <Copyright>Copyright © HearthSim</Copyright>
 	  <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
 	  <Company>HearthSim</Company>
@@ -22,24 +22,7 @@
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <SignAssembly>true</SignAssembly>
 	  <AssemblyOriginatorKeyFile>snKey.snk</AssemblyOriginatorKeyFile>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
-	  <OutputPath>bin\Debug\</OutputPath>
-	  <DefineConstants>TRACE;DEBUG</DefineConstants>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)'=='Release'">
-	  <OutputPath>bin\Release\</OutputPath>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net471|AnyCPU'">
-	  <PlatformTarget>AnyCPU</PlatformTarget>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net471|AnyCPU'">
-	  <PlatformTarget>AnyCPU</PlatformTarget>
-	  <DocumentationFile>bin\Release\net471\HearthStone.ResourceGenerator.xml</DocumentationFile>
+	  <ApplicationIcon />
 	</PropertyGroup>
 
   <ItemGroup>
