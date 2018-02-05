@@ -22,7 +22,6 @@
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <SignAssembly>true</SignAssembly>
 	  <AssemblyOriginatorKeyFile>snKey.snk</AssemblyOriginatorKeyFile>
-	  <ApplicationIcon />
 	</PropertyGroup>
 
   <ItemGroup>

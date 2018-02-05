@@ -13,7 +13,7 @@
 | OUTPUT TYPE: | [Console Application] + [API] |
 | SUPPORTS:    | [Visual Studio] 2017, 2015, 2013, 2012, 2010, 2008 |
 | TAGS:        | [.NET], [NuGet], [MyGet], [API], [C#], [NUnit], [Visual Studio] |
-| STATUS:      | [![hearthstone MyGet Build Status](https://www.myget.org/BuildSource/Badge/hearthstone?identifier=1f42bc57-a3a3-47ed-8ea2-ad8287333101)](https://www.myget.org/) |
+| STATUS:      | [![hearthstone MyGet Build Status](https://www.myget.org/BuildSource/Badge/hearthstone?identifier=9e22fb46-e5c4-4542-aa85-fae0cb369bba)](https://www.myget.org/) |
 | LICENSE:     | [![License](https://img.shields.io/badge/HearthStone-License-yellowgreen.svg?style=plastic)](https://github.com/Latency/HearthStone.ResourceGenerator/blob/master/LICENSE) |
 | CHAT:        | [![Chat](https://img.shields.io/badge/gitter-join%20chat-lightgrey.svg?style=plastic)](https://gitter.im/HearthSim/Hearthstone-Deck-Tracker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) |
 | VERSION:     | [![Download](https://img.shields.io/myget/hearthstone/v/HearthStone.ResourceGenerator.svg?style=plastic)](https://www.myget.org/F/hearthstone/api/v2/package/HearthStone.ResourceGenerator/2.0.0-rc) |
