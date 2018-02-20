@@ -66,6 +66,9 @@ This library is to be installed from [MyGet]:
 There are plug-ins that this project uses as dependency from [NuGet] that are built-in and linked into the [API].
 
 ### Usage:
+
+Now integrated into loader of `DeckTracker.exe`
+
 ```csharp
 ResourceGenerator.exe <path> <folder> <IsOverwriten> [msbuild]
 ```
@@ -81,6 +84,19 @@ ResourceGenerator.exe "$(SolutionDir)Resources" Tiles 0
 | 2. | Folder                       | String  | Folder name that is created underneat the root directory <Path>.                                         |
 | 3. | IsOverwriten                 | Boolean | Forces downloading external images via async web request calls.                                          |
 | 4. | (optional)<br>**DO_NOT_USE** | String  | ["msbuild"] which is used for bootstrap post-build rules only.                                           |
+
+### Example #2
+```csharp
+var tempDir = Path.GetTempPath();
+var targetDir = Assembly.GetExecutingAssembly().Location;
+			
+Console.WriteLine(@"Running Resource Generator!");
+ResourceGenerator.Program.Run(new []{ $"{tempDir}Resources", "Tiles", "0", "msbuild" });
+Console.WriteLine($@"Sucessfully generated tiles in '{tempDir}Resources\Generated'");
+
+Console.WriteLine($@"Copying Generated tiles from '{tempDir}Resources\Generated' to '{targetDir}Images\Tiles'");
+XCopy.Run($@"{tempDir}Resources\Generated", $@"{targetDir}Images\Tiles");
+```
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job.)
 
