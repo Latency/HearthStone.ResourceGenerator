@@ -23,7 +23,7 @@ using HearthStone.Database.Enums;
 
 namespace HearthStone.ResourceGenerator
 {
-    internal static partial class Program
+    public static partial class Program
     {
         /// <summary>
         ///   CreateResources

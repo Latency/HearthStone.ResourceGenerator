@@ -25,7 +25,7 @@ using SixLabors.Primitives;
 
 namespace HearthStone.ResourceGenerator
 {
-    internal static partial class Program
+    public static partial class Program
     {
         /// <summary>
         ///   DownloadTile

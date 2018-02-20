@@ -23,7 +23,7 @@ using ORM_Monitor.Events;
 
 namespace HearthStone.ResourceGenerator
 {
-    internal static partial class Program
+    public static partial class Program
     {
         internal static string[] Arguments;
         internal static bool IsMsBuildInvoked;
@@ -35,16 +35,27 @@ namespace HearthStone.ResourceGenerator
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
+            Run(args);
+        }
+
+
+        /// <summary>
+        ///   Run
+        /// </summary>
+        /// <param name="args"></param>
+        public static void Run(string[] args)
+        {
             if (args.Length < 3 || args.Length > 4)
             {
                 Console.WriteLine($@"Usage:  {args[0]} <path> <folder> <IsOverwriten> [msbuild]");
                 return;
             }
 
-            var tokenSource = new CancellationTokenSource();
-            var tasks = new List<TaskEvent>();
             Arguments = args;
             IsMsBuildInvoked = Arguments.Length == 4 && Arguments[3] == "msbuild";
+
+            var tokenSource = new CancellationTokenSource();
+            var tasks = new List<TaskEvent>();
             ConsoleCancelEventHandler onCancel = null;
 
             try

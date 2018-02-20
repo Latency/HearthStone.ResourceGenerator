@@ -24,7 +24,7 @@ using SixLabors.ImageSharp;
 
 namespace HearthStone.ResourceGenerator
 {
-    internal static partial class Program
+    public static partial class Program
     {
         /// <summary>
         ///   AddResource
